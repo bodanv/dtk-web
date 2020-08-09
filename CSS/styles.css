@@ -330,14 +330,14 @@ header {
 /*======================================== IDs =========================================== */
 
 #banner1 {
-  background-image: url(/Images/banner1.jpg);
+  background-image: url(/Images/banner1.webp);
   background-color: rgb(13, 10, 25);
   padding: 15vh 10vw;
   animation: fadeIn 0.6s ease-in;
 }
 
 #banner2 {
-  background-image: url(/Images/banner2.jpg);
+  background-image: url(/Images/banner2.webp);
   background-color: rgb(19, 30, 33);
   padding: 15vh 10vw;
   animation: fadeIn 0.6s ease-in;
