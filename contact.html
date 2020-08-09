@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДТК Смарт-тек | Контакт</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a2df07ab5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="/Images/icon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- ================================== HEADER ================================== -->
+
+    <header id="header">
+      <a id="logo" href="index.html">
+        <img src="Images/longo.jpg" alt="Logo" />
+      </a>
+      <div id="header-txt">Energy management solutions</div>
+    </header>
+
+    <!-- ================================== NAVBAR ================================== -->
+
+    <nav class="topnav" id="topnav">
+      <a href="index.html"><i class="fa fa-home"></i> Дома</a>
+      <a href="#home"><i class="fa fa-info"></i> За нас</a>
+      <a href="#home"><i class="fa fa-dashboard"></i> Производи</a>
+      <a href="#home"><i class="fa fa-gear"></i> Услуги</a>
+      <a href="#home"><i class="fa fa-graduation-cap"></i> Едукација</a>
+      <a href="team.html"><i class="fa fa-user"></i> Нашиот тим</a>
+      <a href="#home"><i class="fa fa-newspaper-o"></i> Новости</a>
+      <a href="#" class="active">
+        <i class="fa fa-phone"></i> Контакт
+      </a>
+      <a href="#home"><i class="fa fa-question-circle"></i> ЧПП</a>
+      <a href="" style="float: right;">EN</a>
+      <a href="" style="float: right;" class="active">MK</a>
+      <a
+        href="javascript:void(0);"
+        class="icon"
+        id="icon"
+        onclick="responsiveTopnav()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+
+    <!-- ================================== CONTENT ================================== -->
+
+    <section class="content">
+      <h1
+        style="
+          border-bottom: 1px solid #ddd;
+          margin: 5vh 10vw;
+          font-size: xx-large;
+        "
+      >
+        ДТК Смарт-тек
+      </h1>
+      <table>
+        <td class="col-1">
+          <div>
+            <i class="fas fa-map-marker-alt icon"></i>
+            <span>&MediumSpace; ул. Мите Богоевски 13б</span>
+          </div>
+          <br />
+          <div>
+            <i class="fa fa-globe-americas icon"> </i>
+            <span>&MediumSpace;1000 Скопје, Северна Македонија</span>
+          </div>
+          <br />
+          <div>
+            <i class="fa fa-phone icon"></i>
+            <span>&MediumSpace;+389 71 255 483</span>
+          </div>
+        </td>
+        <td class="col-2">
+          <form action="mailto:velkovski_bodan@live.com" method="POST">
+            <label for="nameInput" style="font-weight: 700;">
+              Вашето име<span style="color: red;">*</span></label
+            >
+            <br />
+            <input
+              type="text"
+              name="Name"
+              id="nameInput"
+              placeholder="Име и презиме"
+              required
+            />
+            <br />
+            <label for="phoneInput" style="font-weight: 700;""
+              >Вашиот телефонски број</label
+            >
+            <br />
+            <input
+              type="text"
+              name="Phone"
+              id="phoneInput"
+              placeholder="Телефонски број"
+            />
+            <br />
+            <label for="emailInput" style="font-weight: 700;"
+              ></i> Вашиот e-mail<span
+                style="color: red;"
+                >*</span
+              >
+            </label>
+            <br />
+            <input
+              type="email"
+              name="E-mail"
+              id="emailInput"
+              placeholder="e-mail"
+              required
+            />
+            <br />
+            <label for="messageInput" style="font-weight: 700;"
+              >Вашата порака<span
+                style="color: red;"
+                >*</span
+              ></label
+            >
+            <br />
+            <textarea
+              name="Message"
+              id="messageInput"
+              cols="30"
+              rows="10"
+              placeholder="Вашата порака..."
+              required
+            ></textarea>
+            <button type="submit">Испрати</button>
+          </form>
+        </td>
+      </table>
+
+      <!-- ================================== MAP ================================== -->
+      
+      <div class="map-responsive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5282.592929078883!2d21.407373215540623!3d42.00553157430838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8176c642ff09aed6!2sFaculty%20of%20Electrical%20Engineering%20%26%20Information%20Technologies!5e0!3m2!1sen!2smk!4v1596390012248!5m2!1sen!2smk"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+        
+    <!-- ================================== FOOTER ================================== -->
+
+    <footer id="footer">
+      <a href="https://fitr.mk" target="#">
+        <img src="Images/fitr.webp" alt="FITRLogo" />
+      </a>
+      <a href="https://feit.ukim.edu.mk" target="#">
+        <img src="Images/feit.webp" alt="FEITLogo" />
+      </a>
+      <span>
+        <a href="https://www.facebook.com/dtksmarttech/" target="#">
+          <i class="fa fa-facebook icon"></i>
+        </a>
+        &ThinSpace;
+        <a href="https://linkedin.com/company/dtksmart-tech" target="#">
+          <i class="fa fa-linkedin icon"></i>
+        </a>
+      </span>
+      <span>DTK Smart-tech 2020 &copy</span>
+    </footer>
+  </body>
+  <script type="text/javascript" src="JS/js.js"></script>
+</html>
