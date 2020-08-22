@@ -14,6 +14,16 @@
   box-sizing: border-box;
 }
 
+a {
+  color: var(--darkRed);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(230, 0,0);
+  text-decoration: underline;
+}
+
 footer {
   background-color: rgb(2, 29, 54);
   display: flex;
@@ -261,7 +271,7 @@ header {
 }
 
 .news-container{
-  margin: 10vh 15vw;
+  margin: 0 15vw 5vh 15vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   align-items: flex-start;
@@ -381,6 +391,10 @@ header {
 .responsive-img {
   width: 100%;
   height: auto;
+}
+
+.resp-col-50{
+  max-width: 50%;
 }
 
 /*======================================== IDs =========================================== */
@@ -523,6 +537,14 @@ header {
     padding: 0;
     max-width: 90%;
     text-justify: justify;
+  }
+  
+  .resp-col-50{
+    max-width: 100%;
+  }
+
+  .responsive-block{
+    display: block;
   }
 
   .responsive-nav {
