@@ -82,7 +82,7 @@ header {
   color: white;
   background-color: lightskyblue;
   background-attachment: scroll;
-  background-size: contain/cover;
+  background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
   min-height: 50vh;
@@ -260,6 +260,54 @@ header {
   padding-bottom: 6px;
 }
 
+.news-container{
+  margin: 10vh 15vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  align-items: flex-start;
+  justify-items: flex-end;
+  gap: calc(2vw + 10px);
+  max-width: 80%;
+}
+
+.news-container a{
+  color: var(--darkRed);
+  text-decoration: none;
+}
+
+.news-container a:hover{
+  color: rgb(230, 0, 0);
+  text-decoration: underline;
+}
+
+.news-content{
+  display: flex;
+  align-items: flex-start;
+  justify-items: flex-start;
+  flex-flow: row nowrap;
+  max-width: 100%;
+}
+
+.news-date{
+  background: lightskyblue;
+  color: white;
+  text-justify: center;
+  padding: 5px 15px;
+  min-width: 55px;
+}
+
+.news-img{
+  width: 250px;
+  height: 250px;
+  display: flex;
+}
+
+.news-text{
+  padding: 0 0 0 10px;
+  text-justify: inter-word;
+  max-width: 40%;
+}
+
 .table-responsive {
   display: inline-flex;
 }
@@ -279,6 +327,14 @@ header {
 .team-member a:hover {
   color: var(--darkRed);
   text-decoration: underline;
+}
+
+.thumbnail{
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  object-fit: cover;
+  object-position: center;
 }
 
 .topnav {
@@ -348,7 +404,8 @@ header {
 }
 
 #logo img {
-  height: 100%;
+  max-width: 80%;
+  max-height: 100%;
 }
 
 #header-txt {
@@ -430,9 +487,14 @@ header {
     padding: 0;
     margin: 0;
   }
-
+  
+  #logo {
+    padding: 0;
+  }
+  
   #logo img {
-    height: 60%;
+    max-width: 80%;
+    max-height: 60%;
   }
 
   .modal-content td {
@@ -444,6 +506,23 @@ header {
   .modal-text {
     /* text-align: justify; */
     
+  }
+
+  .news-container{
+    margin: 5vh 5vw;
+    flex-flow: column wrap;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    max-width: 100%;
+  }
+  
+  .news-content{
+    flex-wrap: wrap;
+  }
+
+  .news-text{
+    padding: 0;
+    max-width: 90%;
+    text-justify: justify;
   }
 
   .responsive-nav {
