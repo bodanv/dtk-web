@@ -301,7 +301,7 @@ header {
 .news-date{
   background: lightskyblue;
   color: white;
-  text-justify: center;
+  text-align: center;
   padding: 5px 15px;
   min-width: 55px;
 }
@@ -316,6 +316,23 @@ header {
   padding: 0 0 0 10px;
   text-justify: inter-word;
   max-width: 40%;
+}
+
+.services-grid{
+  margin: 50px 0 50px 0;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: calc(2vw + 10px);
+  flex-wrap: wrap;
+}
+
+.service{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: justify;
 }
 
 .table-responsive {
@@ -491,6 +508,7 @@ header {
   }
 
   header {
+    padding-top: 10px;
     display: block;
     text-align: center;
     height: 96px;
@@ -549,6 +567,19 @@ header {
 
   .responsive-nav {
     animation: expandTopnav 0.5s ease-in-out;
+  }
+
+  .services-grid{
+    grid-template-columns: repeat(auto-fill, minmax(100px,600px));
+  }
+
+  .service{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service div{
+    max-width: 100%;
   }
 
   .table-responsive td {

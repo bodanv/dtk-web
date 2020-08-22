@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="mk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДТК Смарт-тек</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a2df07ab5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- ================================== HEADER ================================== -->
+
+    <header id="header">
+      <a id="logo" href="index.html">
+      <img src="Images/longo.jpg" alt="Logo" />
+      </a>
+      <div id="header-txt">Energy management solutions</div>
+    </header>
+
+    <!-- ================================== NAVBAR ================================== -->
+
+    <nav class="topnav" id="topnav">
+      <a href="#""><i class="fa fa-home"></i> Дома</a>
+      <a href="about.html"><i class="fa fa-info"></i> За нас</a>
+      <a href="#home"><i class="fa fa-dashboard"></i> Производи</a>
+      <a href="#" class="active><i class="fa fa-gear"></i> Услуги</a>
+      <a href="#home"><i class="fa fa-graduation-cap"></i> Едукација</a>
+      <a href="team.html"><i class="fa fa-user"></i> Нашиот тим</a>
+      <a href="news.html"><i class="fa fa-newspaper-o"></i> Новости</a>
+      <a href="contact.html"><i class="fa fa-phone"></i> Контакт</a>
+      <a href="faq.html"><i class="fa fa-question-circle"></i> ЧПП</a>
+      <a href="" style="float: right;">EN</a>
+      <a href="" style="float: right;" class="active">MK</a>
+      <a
+        href="javascript:void(0);"
+        class="icon"
+        id="icon"
+        onclick="responsiveTopnav()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+
+    <!-- ================================== CONTENT ================================== -->
+
+    <main class="content">
+      <h1
+        style="
+          border-bottom: 1px solid #ddd;
+          margin: 5vh 10vw 0 10vw;
+          font-size: xx-large;
+        "
+      >
+        Нашите услуги
+      </h1>
+      <br>
+      <div style="margin: 2vh 10vw 0 10vw;">
+        <p>
+          Нашиот стручен тим е компетентен да пружи експертска анализа на мерните податоци од 
+          системите за менаџмент со електрична енергија, да понуди соодветни решенија, и со тоа 
+          да помогне кон зголемување на енергетската ефикасност на компаниите. Дозволете ни да ви 
+          помогнеме да ги намалите трошоците за електрична енергија!
+        </p>
+        <div class="services-grid">
+          <div class="service">
+            <div>
+              <img src="Images/services-1.webp" class="responsive-img" alt="">
+            </div>
+            <div>
+              <h4>Анализа на електрична енергија</h4><br>
+              <p>
+                Анализа на консумацијата на електрична енергија на компанијата и анализа на наплата. 
+                Идентификација на главни трошоци и можности за заштеда.
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div>
+              <img src="Images/services-2.webp" class="responsive-img" alt="">
+            </div>
+            <div>
+              <h4>Предлог решенија</h4><br>
+              <p>
+                Изготвување и разработка на предлог решенија за зголемување на енергеткса ефикасност 
+                на компанијата. Оптимизирање на работата на електрични уреди. Инвестиции и обновување 
+                на електрични уреди и апарати. Интеграција на обновливи извори на енергија.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="services-grid">
+          <div class="service">
+            <div>
+              <img src="Images/services-3.webp" class="responsive-img" alt="">
+            </div>
+            <div>
+              <h4>Повраток на инвестиции</h4><br>
+              <p>
+                Анализа на повраток на инвестиции во систем за менаџмент со електрична енергија, 
+                инвестиции во електрични уреди, инвестиции во термичка изолација, инвестиции во 
+                обновливи извори за енергија, инвестиции во потрошувачи со поголем коефициент на 
+                полезно дејство.
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div>
+              <img src="Images/services-4.webp" class="responsive-img" alt="">
+            </div>
+            <div>
+              <h4>Имплементација на стандарди</h4><br>
+              <p>
+                Водење и обука за имплементација и сертификација за стандардот за менаџмент со 
+                енергија ISO 50001.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ================================== FOOTER ================================== -->
+
+    <footer id="footer">
+      <a href="https://fitr.mk" target="#">
+        <img src="Images/fitr.webp" class="responsive-img" alt="FITRLogo" />
+      </a>
+      <a href="https://feit.ukim.edu.mk" target="#">
+        <img src="Images/feit.webp" class="responsive-img" alt="FEITLogo" />
+      </a>
+      <span>
+        <a href="https://www.facebook.com/dtksmarttech/" target="#">
+          <i class="fa fa-facebook icon"></i>
+        </a>
+        &ThinSpace;
+        <a href="https://linkedin.com/company/dtksmart-tech" target="#">
+          <i class="fa fa-linkedin icon"></i>
+        </a>
+      </span>
+      <span>DTK Smart-tech 2020 &copy</span>
+    </footer>
+  </body>
+  <script type="text/javascript" src="JS/js.js"></script>
+  <script type="text/javascript" src="JS/index.js"></script>
+</html>
